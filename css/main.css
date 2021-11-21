@@ -1,0 +1,332 @@
+.back::after, .out a::after{
+	content: '';
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	margin-left: 2px;
+	bottom: 0;
+	right: 0;
+}
+
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: Oswald;
+	font-size :20px;
+	color: black;
+	background-color:#FFEFD5;
+	letter-spacing: 0.1em;
+
+}
+.menu {
+	display: flex;
+	justify-content: space-between;
+	font-size: 25px;
+	width: 35%;
+}
+.menu li , a {
+	text-decoration: none;
+	color: #000;
+	text-transform: uppercase;
+	
+}
+.nav {
+	display: flex; 
+	align-items: center;
+	justify-content:space-around;
+	background-color: #4682B4;
+	width: 100%;
+	padding-top: 5px;
+	height: 70px;
+	margin-bottom: 25px;
+}
+a {
+	text-decoration: none;
+}
+.logo {
+	width: 65px;
+	height: 65px;
+}
+ul , li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+a:hover {
+	color:#fff;
+}
+* {
+	 transition: 0.3s;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+.ft {
+	background-color: #4682B4;
+	font-size: 25px;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.discipline-wraper{
+	margin: 20px 0 0 5px;
+	/*text-align: center;*/
+}
+
+.auth{
+	padding: 2%;
+	border-radius: 15px;
+	border:8px double;
+	margin: 0 auto;
+	width: 350px;
+}
+select {
+	border-radius: 5px;
+	border: 1px solid #989898;
+	
+}
+select> option {
+	font-size: 15px
+	
+}
+.login_fields{
+	text-align: right;
+}
+.login_button_wraper{
+	text-align: center;
+}
+input:focus{
+    outline: 2px solid #F27070;
+}
+.sign{
+	width: 100px;
+	height: 25px;
+	background-color: #FFEFD5;
+	border-radius: 15px ;
+	border: 2px solid #000;
+}
+.content {
+	margin: 50px 0 100px 0;
+}
+.bt {
+	width: 120px;
+	height: 30px;
+}
+.bot {
+	display: flex;
+	align-items: center;
+	width: 30%;
+	justify-content: space-evenly;	
+}
+.back::after{
+	margin: 0 0 0 5px;
+	transition: 0.3s;
+	height: 25px;
+	width: 25px;
+	background-image: url("../img/back2.png");
+	transform: translateY(5px);
+}
+.back:hover::after{
+	margin: 0 5px 0 0;
+}
+.score_input {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #ffefd5;
+}
+/*.contentteacher {
+	margin: 50px 0 20px 20px;
+}*/
+table {
+    margin: 0 auto;
+    border: 2px solid #000;
+    border-collapse: collapse;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+th{
+    border: 2px solid #000;
+}
+td{
+    border: 1px solid #000;
+    text-align: center;
+}
+tbody{
+    border: 1px solid #000;
+}
+.student_active_row{
+    border:solid 4px #4682B4;
+}
+.scroll {
+	overflow: auto;
+}
+.object {
+	border-radius: 5px;
+	border: solid 2px;
+	margin: 20px 0 20px 0 ;
+	font-size:20px;
+	padding-left: 20px;
+}
+.object:hover {
+	background-color: #FFE4B5;
+	padding-left: 50px;
+}
+.object a:hover  {
+	color:black;
+}
+
+.select-object {
+    padding: 2%;
+    border-radius: 15px;
+    border: 8px double;
+    margin: 0 auto;
+    width: 350px;
+}
+h2 {
+	margin: 0;
+}
+.btn {
+	border:solid 1px;
+	margin-top: 10px;
+	border-radius: 8px;
+	background-color: #fff ;
+	cursor: pointer;
+}
+.btn:hover{
+	background-color: #FFE4B5;
+}
+.select_student {
+	width: 70%;
+	height: 25px;
+}
+.select_group {
+	/*width: 20%;*/
+	height: 25px;
+}
+.out{
+    border-radius: 5px;
+	border: solid 2px;
+	font-size:15px;
+	text-align: right ;
+	padding:2px ;
+}
+.out a{
+	display: inline-block;
+}
+.out:hover {
+	background-color:#FFE4B5 ;
+}
+.out a::after {
+	width: 20px;
+	height: 20px;
+	background-image: url("../img/logout.png");
+	transform: translateY(3px);
+}
+.out a:hover  {
+	color:black;
+}
+
+
+
+
+@media only screen and (max-device-width : 1300px) {
+.menu {
+	width: 70%;
+}
+.content {
+	margin: 20px 0 20px 0;
+}
+.comtainer {
+	width: 100%;
+}
+.bot {
+	width: 40%;
+}
+}
+@media only screen and (max-device-width : 1000px) {
+
+.ft {
+	font-size: 20px;
+}
+.menu {
+	width: 65%;
+}
+.bot {
+	width: 50%;
+}
+}
+@media only screen and (max-device-width : 800px) {
+.wor {
+display: none;
+}
+.bot {
+	width: 60%;
+}
+}
+@media only screen and (max-device-width : 700px) {
+.logo {
+	display:none;
+}
+
+.menu {
+	width: 100%;
+	justify-content: space-evenly;
+	font-size:20px;
+}
+.bot {
+	width: 75%;
+}
+}
+@media only screen and (max-device-width : 500px) {
+.bot {
+    width: 90%;
+}
+}
+@media only screen and (max-device-width : 450px) {
+.select-object {
+    width: 300px;
+}
+.auth {
+	width: 300px;
+	font-size:15px;
+}
+.select_group {
+	/*width: 25%;*/
+}
+.select_student {
+	width: 80%;
+}
+}
+@media only screen and (max-device-width : 375px) {
+.select-object {
+    width: 250px;
+}
+.bot {
+	font-size:15px;
+	width: 100%;
+}
+.menu {
+	font-size:15px;
+}
+.auth {
+	width: 250px;
+}
+.select_student {
+	width: 95%;
+}
+.select_group {
+    /*width: 30%;*/
+}
+.container {
+	width: 100%;
+}
+}
